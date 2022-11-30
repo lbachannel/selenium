@@ -3,6 +3,7 @@ package com.attem.selenium.testng.logs;
 import java.io.IOException;
 import java.util.Set;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -10,8 +11,28 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.atteam.selenium.testng.utils.ExcelUtils;
 
-public class SayHelloData {
+public class SayHelloData extends TestData implements Log<SayHelloData>{
+	private String id;
+	private String password;
 	private String fullname;
+
+	
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public String getFullname() {
 		return fullname;
@@ -20,9 +41,9 @@ public class SayHelloData {
 	public void setFullname(String fullname) {
 		this.fullname = fullname;
 	}
-	
+
 	@Override
-	public void writeLog(String src, String sheetName, Set<SayHelloData> logs) throws IOException {
+	public void writeLog(String src, String sheetName, Set<SayHelloData> says) throws IOException {
 		// hàm tiện ích tạo đối tượng workbook từ đường dẫn file chỉ định
 		XSSFWorkbook workbook = ExcelUtils.getWorkbook(src);
 		
@@ -39,7 +60,7 @@ public class SayHelloData {
 		CellStyle rowStyle = ExcelUtils.getRowStyle(workbook);
 		
 		// duyệt qua bộ dữ liệu
-		for (LoginData log : logs) {
+		for (SayHelloData say : says) {
 			// tạo row mới dựa vào index của row cuối cùng, đồng thời tăng lastRow lên 1 cho vòng lặp kế tiếp
 			Row row = sheet.createRow(lastRow);
 			 // thiết lập chiều cao của row, nên để mặc định là 60 cho tiện hiển thị ảnh thumbnail
@@ -51,10 +72,32 @@ public class SayHelloData {
 			// chứ không phải của log hiện tại
 			// vì vậy sẽ không đọc được dữ liệu kế thừa từ lớp TestData
 			// dữ liệu in ra sẽ không đầy đủ
-			log.writeDataRow(log, row, sheet); 
+			say.writeDataRow(say, row, sheet); 
 			lastRow++;
 		}
 		// hàm tiện ích xuất ra file sử dụng đường dẫn và workbook chỉ định
 		ExcelUtils.export(src, workbook); 
 	}
+
+	@Override
+	public void writeDataRow(SayHelloData say, Row row, XSSFSheet sheet) throws IOException {
+		CellStyle globalStyle = row.getRowStyle();
+		
+		Cell cell;
+
+		cell = row.createCell(0); //Cell thứ 0
+		cell.setCellValue(say.getId());
+		cell.setCellStyle(globalStyle);
+		
+		cell = row.createCell(1);
+		cell.setCellValue(say.getPassword());
+		cell.setCellStyle(globalStyle);
+		
+		cell = row.createCell(2);
+		cell.setCellValue(say.getFullname());
+		cell.setCellStyle(globalStyle);
+		
+		writeTestData(2, row, sheet);	
+	}
+
 }
