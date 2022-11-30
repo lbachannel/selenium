@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-30T22:04:22 ICT" name="Default suite" finished-at="2022-11-30T22:06:29 ICT" duration-ms="127631">
+  <suite started-at="2022-11-30T22:33:01 ICT" name="Default suite" finished-at="2022-11-30T22:34:37 ICT" duration-ms="95382">
     <groups>
     </groups>
-    <test started-at="2022-11-30T22:04:22 ICT" name="Default test" finished-at="2022-11-30T22:06:29 ICT" duration-ms="127631">
+    <test started-at="2022-11-30T22:33:01 ICT" name="Default test" finished-at="2022-11-30T22:34:37 ICT" duration-ms="95382">
       <class name="com.atteam.selenium.testng.test.SayHelloTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:04:22 ICT" name="init" finished-at="2022-11-30T22:04:22 ICT" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:01 ICT" name="init" finished-at="2022-11-30T22:33:01 ICT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:04:23 ICT" name="setUpClass" finished-at="2022-11-30T22:04:25 ICT" duration-ms="2389" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:02 ICT" name="setUpClass" finished-at="2022-11-30T22:33:04 ICT" duration-ms="2178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:04:25 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:04:28 ICT" duration-ms="3274" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:04 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:08 ICT" duration-ms="3289" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:04:28 ICT" name="tearDown" finished-at="2022-11-30T22:04:45 ICT" duration-ms="16267" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:08 ICT" name="tearDown" finished-at="2022-11-30T22:33:24 ICT" duration-ms="16264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:04:45 ICT" name="setUpClass" finished-at="2022-11-30T22:04:46 ICT" duration-ms="1314" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:24 ICT" name="setUpClass" finished-at="2022-11-30T22:33:25 ICT" duration-ms="1591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:04:46 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:04:49 ICT" duration-ms="3214" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:25 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:29 ICT" duration-ms="3270" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:04:49 ICT" name="tearDown" finished-at="2022-11-30T22:05:05 ICT" duration-ms="16298" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:29 ICT" name="tearDown" finished-at="2022-11-30T22:33:29 ICT" duration-ms="61" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,11 +93,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:05 ICT" name="setUpClass" finished-at="2022-11-30T22:05:07 ICT" duration-ms="1450" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:29 ICT" name="setUpClass" finished-at="2022-11-30T22:33:30 ICT" duration-ms="1340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:07 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:05:10 ICT" duration-ms="3243" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:30 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:33 ICT" duration-ms="3248" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:10 ICT" name="tearDown" finished-at="2022-11-30T22:05:26 ICT" duration-ms="16261" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:33 ICT" name="tearDown" finished-at="2022-11-30T22:33:50 ICT" duration-ms="16275" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,11 +134,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:26 ICT" name="setUpClass" finished-at="2022-11-30T22:05:28 ICT" duration-ms="1302" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:50 ICT" name="setUpClass" finished-at="2022-11-30T22:33:51 ICT" duration-ms="1510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:28 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:05:31 ICT" duration-ms="3254" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:51 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:54 ICT" duration-ms="3258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -164,7 +164,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:31 ICT" name="tearDown" finished-at="2022-11-30T22:05:47 ICT" duration-ms="16180" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:54 ICT" name="tearDown" finished-at="2022-11-30T22:33:54 ICT" duration-ms="50" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,11 +175,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:47 ICT" name="setUpClass" finished-at="2022-11-30T22:05:48 ICT" duration-ms="1339" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:54 ICT" name="setUpClass" finished-at="2022-11-30T22:33:56 ICT" duration-ms="1539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:48 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:05:52 ICT" duration-ms="3257" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:56 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:59 ICT" duration-ms="3271" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:05:52 ICT" name="tearDown" finished-at="2022-11-30T22:06:08 ICT" duration-ms="16279" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:59 ICT" name="tearDown" finished-at="2022-11-30T22:34:16 ICT" duration-ms="16249" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,11 +216,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:06:08 ICT" name="setUpClass" finished-at="2022-11-30T22:06:10 ICT" duration-ms="1853" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:16 ICT" name="setUpClass" finished-at="2022-11-30T22:34:17 ICT" duration-ms="1490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:06:10 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:06:13 ICT" duration-ms="3240" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:17 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:34:20 ICT" duration-ms="3257" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -246,7 +246,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:06:13 ICT" name="tearDown" finished-at="2022-11-30T22:06:29 ICT" duration-ms="16295" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:20 ICT" name="tearDown" finished-at="2022-11-30T22:34:37 ICT" duration-ms="16269" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -257,7 +257,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="destroy()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:06:29 ICT" name="destroy" finished-at="2022-11-30T22:06:29 ICT" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:37 ICT" name="destroy" finished-at="2022-11-30T22:34:37 ICT" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
