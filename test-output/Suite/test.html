@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 02 15:48:45 ICT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>253 seconds (253442 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.SayHelloTest.multipleSayHello()'><b>multipleSayHello</b><br>Test class: com.atteam.selenium.testng.test.SayHelloTest<br>Parameters: EMP03, 123, Sara Tancredi, Welcome Sara Tancredi</td>
+<td></td>
+<td>3</td>
+<td>com.atteam.selenium.testng.test.SayHelloTest@31304f14</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.SayHelloTest.multipleSayHello()'><b>multipleSayHello</b><br>Test class: com.atteam.selenium.testng.test.SayHelloTest<br>Parameters: EMP01, 123, Michael Scofield, Welcome Michael Scofield</td>
+<td></td>
+<td>3</td>
+<td>com.atteam.selenium.testng.test.SayHelloTest@31304f14</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.LoginTest.multipleLogin()'><b>multipleLogin</b><br>Test class: com.atteam.selenium.testng.test.LoginTest<br>Parameters: EMP03, 123, http://localhost:8080/selenium/index</td>
+<td></td>
+<td>4</td>
+<td>com.atteam.selenium.testng.test.LoginTest@799f10e1</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.SayHelloTest.multipleSayHello()'><b>multipleSayHello</b><br>Test class: com.atteam.selenium.testng.test.SayHelloTest<br>Parameters: EMP06, 123, Michael Scott, Welcome Michael Scott</td>
+<td></td>
+<td>3</td>
+<td>com.atteam.selenium.testng.test.SayHelloTest@31304f14</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.LoginTest.multipleLogin()'><b>multipleLogin</b><br>Test class: com.atteam.selenium.testng.test.LoginTest<br>Parameters: EMP05, 123, http://localhost:8080/selenium/index</td>
+<td></td>
+<td>4</td>
+<td>com.atteam.selenium.testng.test.LoginTest@799f10e1</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.LoginTest.multipleLogin()'><b>multipleLogin</b><br>Test class: com.atteam.selenium.testng.test.LoginTest<br>Parameters: EMP04, 123, http://localhost:8080/selenium/index</td>
+<td></td>
+<td>4</td>
+<td>com.atteam.selenium.testng.test.LoginTest@799f10e1</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.SayHelloTest.multipleSayHello()'><b>multipleSayHello</b><br>Test class: com.atteam.selenium.testng.test.SayHelloTest<br>Parameters: EMP05, 123, Fenando Sucre, Welcome Fenando Sucre</td>
+<td></td>
+<td>3</td>
+<td>com.atteam.selenium.testng.test.SayHelloTest@31304f14</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.LoginTest.multipleLogin()'><b>multipleLogin</b><br>Test class: com.atteam.selenium.testng.test.LoginTest<br>Parameters: EMP06, 123, http://localhost:8080/selenium/index</td>
+<td></td>
+<td>4</td>
+<td>com.atteam.selenium.testng.test.LoginTest@799f10e1</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.SayHelloTest.multipleSayHello()'><b>multipleSayHello</b><br>Test class: com.atteam.selenium.testng.test.SayHelloTest<br>Parameters: EMP02, 123, Lincoln Burrows, Welcome Lincoln Burrows</td>
+<td></td>
+<td>3</td>
+<td>com.atteam.selenium.testng.test.SayHelloTest@31304f14</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.LoginTest.multipleLogin()'><b>multipleLogin</b><br>Test class: com.atteam.selenium.testng.test.LoginTest<br>Parameters: EMP02, 123, http://localhost:8080/selenium/index</td>
+<td></td>
+<td>4</td>
+<td>com.atteam.selenium.testng.test.LoginTest@799f10e1</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.LoginTest.multipleLogin()'><b>multipleLogin</b><br>Test class: com.atteam.selenium.testng.test.LoginTest<br>Parameters: EMP01, 123, http://localhost:8080/selenium/index</td>
+<td></td>
+<td>8</td>
+<td>com.atteam.selenium.testng.test.LoginTest@799f10e1</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.SayHelloTest.multipleSayHello()'><b>multipleSayHello</b><br>Test class: com.atteam.selenium.testng.test.SayHelloTest<br>Parameters: EMP04, 123, Alexander Mahone, Welcome Alexander Mahone</td>
+<td></td>
+<td>3</td>
+<td>com.atteam.selenium.testng.test.SayHelloTest@31304f14</td></tr>
+<tr>
+<td title='com.atteam.selenium.testng.test.LoginTest.multipleLogin()'><b>multipleLogin</b><br>Test class: com.atteam.selenium.testng.test.LoginTest<br>Parameters: EMP07, 123, http://localhost:8080/selenium/login</td>
+<td></td>
+<td>4</td>
+<td>com.atteam.selenium.testng.test.LoginTest@799f10e1</td></tr>
+</table><p>
+</body>
+</html>

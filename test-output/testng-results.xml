@@ -1,21 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-30T22:33:01 ICT" name="Default suite" finished-at="2022-11-30T22:34:37 ICT" duration-ms="95382">
+  <suite started-at="2022-12-02T15:48:45 ICT" name="Suite" finished-at="2022-12-02T15:52:59 ICT" duration-ms="253442">
     <groups>
     </groups>
-    <test started-at="2022-11-30T22:33:01 ICT" name="Default test" finished-at="2022-11-30T22:34:37 ICT" duration-ms="95382">
-      <class name="com.atteam.selenium.testng.test.SayHelloTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:01 ICT" name="init" finished-at="2022-11-30T22:33:01 ICT" duration-ms="5" status="PASS">
+    <test started-at="2022-12-02T15:48:45 ICT" name="test" finished-at="2022-12-02T15:52:59 ICT" duration-ms="253442">
+      <class name="com.atteam.selenium.testng.test.LoginTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:48:45 ICT" name="init" finished-at="2022-12-02T15:48:45 ICT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:02 ICT" name="setUpClass" finished-at="2022-11-30T22:33:04 ICT" duration-ms="2178" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:48:46 ICT" name="setUpClass" finished-at="2022-12-02T15:48:49 ICT" duration-ms="2515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:04 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:08 ICT" duration-ms="3289" status="PASS">
+        <test-method signature="multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:48:49 ICT" name="multipleLogin" data-provider="loginData" finished-at="2022-12-02T15:48:57 ICT" duration-ms="8542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMP01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:8080/selenium/index]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:48:57 ICT" name="tearDown" finished-at="2022-12-02T15:48:57 ICT" duration-ms="63" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multipleLogin status=SUCCESS method=LoginTest.multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:48:57 ICT" name="setUpClass" finished-at="2022-12-02T15:48:59 ICT" duration-ms="1598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:48:59 ICT" name="multipleLogin" data-provider="loginData" finished-at="2022-12-02T15:49:03 ICT" duration-ms="4318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMP02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:8080/selenium/index]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:49:03 ICT" name="tearDown" finished-at="2022-12-02T15:49:19 ICT" duration-ms="16268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multipleLogin status=SUCCESS method=LoginTest.multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:49:19 ICT" name="setUpClass" finished-at="2022-12-02T15:49:21 ICT" duration-ms="1380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:49:21 ICT" name="multipleLogin" data-provider="loginData" finished-at="2022-12-02T15:49:25 ICT" duration-ms="4250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMP03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:8080/selenium/index]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:49:25 ICT" name="tearDown" finished-at="2022-12-02T15:49:41 ICT" duration-ms="16236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multipleLogin status=SUCCESS method=LoginTest.multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:49:41 ICT" name="setUpClass" finished-at="2022-12-02T15:49:43 ICT" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:49:43 ICT" name="multipleLogin" data-provider="loginData" finished-at="2022-12-02T15:49:47 ICT" duration-ms="4276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMP04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:8080/selenium/index]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:49:47 ICT" name="tearDown" finished-at="2022-12-02T15:50:03 ICT" duration-ms="16250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multipleLogin status=SUCCESS method=LoginTest.multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:03 ICT" name="setUpClass" finished-at="2022-12-02T15:50:05 ICT" duration-ms="1387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:05 ICT" name="multipleLogin" data-provider="loginData" finished-at="2022-12-02T15:50:09 ICT" duration-ms="4278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMP05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:8080/selenium/index]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:09 ICT" name="tearDown" finished-at="2022-12-02T15:50:25 ICT" duration-ms="16228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multipleLogin status=SUCCESS method=LoginTest.multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:25 ICT" name="setUpClass" finished-at="2022-12-02T15:50:27 ICT" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:27 ICT" name="multipleLogin" data-provider="loginData" finished-at="2022-12-02T15:50:31 ICT" duration-ms="4236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMP06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:8080/selenium/index]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:31 ICT" name="tearDown" finished-at="2022-12-02T15:50:31 ICT" duration-ms="87" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multipleLogin status=SUCCESS method=LoginTest.multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:31 ICT" name="setUpClass" finished-at="2022-12-02T15:50:32 ICT" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:32 ICT" name="multipleLogin" data-provider="loginData" finished-at="2022-12-02T15:50:36 ICT" duration-ms="4241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EMP07]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:8080/selenium/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:36 ICT" name="tearDown" finished-at="2022-12-02T15:50:53 ICT" duration-ms="16250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multipleLogin status=SUCCESS method=LoginTest.multipleLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.atteam.selenium.testng.test.LoginTest@799f10e1]" started-at="2022-12-02T15:50:53 ICT" name="destroy" finished-at="2022-12-02T15:50:53 ICT" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- com.atteam.selenium.testng.test.LoginTest -->
+      <class name="com.atteam.selenium.testng.test.SayHelloTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:50:53 ICT" name="init" finished-at="2022-12-02T15:50:53 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:50:53 ICT" name="setUpClass" finished-at="2022-12-02T15:50:54 ICT" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:50:54 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-12-02T15:50:58 ICT" duration-ms="3316" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,22 +303,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:08 ICT" name="tearDown" finished-at="2022-11-30T22:33:24 ICT" duration-ms="16264" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:50:58 ICT" name="tearDown" finished-at="2022-12-02T15:51:14 ICT" duration-ms="16268" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125] output={null}]]]>
+                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:24 ICT" name="setUpClass" finished-at="2022-11-30T22:33:25 ICT" duration-ms="1591" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:14 ICT" name="setUpClass" finished-at="2022-12-02T15:51:15 ICT" duration-ms="1292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:25 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:29 ICT" duration-ms="3270" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:15 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-12-02T15:51:18 ICT" duration-ms="3335" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,22 +344,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:29 ICT" name="tearDown" finished-at="2022-11-30T22:33:29 ICT" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:18 ICT" name="tearDown" finished-at="2022-12-02T15:51:35 ICT" duration-ms="16209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125] output={null}]]]>
+                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:29 ICT" name="setUpClass" finished-at="2022-11-30T22:33:30 ICT" duration-ms="1340" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:35 ICT" name="setUpClass" finished-at="2022-12-02T15:51:36 ICT" duration-ms="1448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:30 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:33 ICT" duration-ms="3248" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:36 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-12-02T15:51:39 ICT" duration-ms="3284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,22 +385,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:33 ICT" name="tearDown" finished-at="2022-11-30T22:33:50 ICT" duration-ms="16275" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:39 ICT" name="tearDown" finished-at="2022-12-02T15:51:56 ICT" duration-ms="16241" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125] output={null}]]]>
+                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:50 ICT" name="setUpClass" finished-at="2022-11-30T22:33:51 ICT" duration-ms="1510" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:56 ICT" name="setUpClass" finished-at="2022-12-02T15:51:57 ICT" duration-ms="1394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:51 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:54 ICT" duration-ms="3258" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:51:57 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-12-02T15:52:00 ICT" duration-ms="3264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -164,22 +426,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:54 ICT" name="tearDown" finished-at="2022-11-30T22:33:54 ICT" duration-ms="50" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:00 ICT" name="tearDown" finished-at="2022-12-02T15:52:17 ICT" duration-ms="16259" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125] output={null}]]]>
+                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:54 ICT" name="setUpClass" finished-at="2022-11-30T22:33:56 ICT" duration-ms="1539" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:17 ICT" name="setUpClass" finished-at="2022-12-02T15:52:18 ICT" duration-ms="1367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:56 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:33:59 ICT" duration-ms="3271" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:18 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-12-02T15:52:21 ICT" duration-ms="3293" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,22 +467,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:33:59 ICT" name="tearDown" finished-at="2022-11-30T22:34:16 ICT" duration-ms="16249" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:21 ICT" name="tearDown" finished-at="2022-12-02T15:52:37 ICT" duration-ms="16260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125] output={null}]]]>
+                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:16 ICT" name="setUpClass" finished-at="2022-11-30T22:34:17 ICT" duration-ms="1490" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:37 ICT" name="setUpClass" finished-at="2022-12-02T15:52:39 ICT" duration-ms="1499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:17 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-11-30T22:34:20 ICT" duration-ms="3257" status="PASS">
+        <test-method signature="multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:39 ICT" name="multipleSayHello" data-provider="sayHelloData" finished-at="2022-12-02T15:52:42 ICT" duration-ms="3271" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -246,22 +508,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleSayHello -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:20 ICT" name="tearDown" finished-at="2022-11-30T22:34:37 ICT" duration-ms="16269" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:42 ICT" name="tearDown" finished-at="2022-12-02T15:52:58 ICT" duration-ms="16275" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125] output={null}]]]>
+                <![CDATA[[TestResult name=multipleSayHello status=SUCCESS method=SayHelloTest.multipleSayHello(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="destroy()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@459e9125]" started-at="2022-11-30T22:34:37 ICT" name="destroy" finished-at="2022-11-30T22:34:37 ICT" duration-ms="142" status="PASS">
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.atteam.selenium.testng.test.SayHelloTest@31304f14]" started-at="2022-12-02T15:52:58 ICT" name="destroy" finished-at="2022-12-02T15:52:59 ICT" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
       </class> <!-- com.atteam.selenium.testng.test.SayHelloTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
 </testng-results>

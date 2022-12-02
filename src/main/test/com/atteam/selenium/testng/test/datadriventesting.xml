@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test thread-count="2" name="test"> <!-- thread-count: login + greating <=> 2 -->
+    <classes>
+      <class name="com.atteam.selenium.testng.test.LoginTest"/>
+      <class name="com.atteam.selenium.testng.test.SayHelloTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
