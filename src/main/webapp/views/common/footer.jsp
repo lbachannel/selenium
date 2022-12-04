@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 	pageEncoding="ISO-8859-1"%>
 <footer id="footer" class="position-relative bottom-0 end-0 footer-fix" style="position:fixed!important; left:0!important;">
 	<div class="container">
