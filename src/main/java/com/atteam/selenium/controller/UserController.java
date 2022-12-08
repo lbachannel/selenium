@@ -47,16 +47,11 @@ public class UserController extends HttpServlet {
 			}
 		}else if(uri.contains("/delete")) {
 			try {
-				user = dao.findById(id);
-				if (user.getAdmin() == false) {
-					id = request.getParameter("id");
-					dao.remove(dao.findById(id));
-					request.setAttribute("message", "Delete user id " + id + " successfully!");
-				}else {
-					request.setAttribute("message", "Delete user id " + id + " failed!");
-				}
+				id = request.getParameter("id");
+				dao.remove(dao.findById(id));
+				request.setAttribute("message", "Delete user id " + id + " successfully!");
 			} catch (Exception e) {
-				request.setAttribute("message", "Delete user id " + id + " failed!");
+				// TODO: handle exception
 			}
 		}
 		request.setAttribute("form", user); // show up form layout
