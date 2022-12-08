@@ -23,15 +23,15 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.atteam.selenium.testng.utils.ExcelUtils;
-import com.attem.selenium.testng.logs.UpdateData;
+import com.attem.selenium.testng.logs.InsertData;
 
-public class UpdateTest {
+public class InsertTest {
 	private static WebDriver myBrowser;
-	private final String fileExcel = ExcelUtils.excelPath + "test_update.xlsx";
-	private Set<UpdateData> logs; // Map
+	private final String fileExcel = ExcelUtils.excelPath + "test_insert.xlsx";
+	private Set<InsertData> logs; // Map
 	//Trước khi chạy BeforeMthod thì data sẽ bị reset. logs dùng để chứa dữ liệu trước đó	
 
-	private UpdateData data;
+	private InsertData data;
 	
 	@BeforeClass
 	public void init() {
@@ -51,7 +51,7 @@ public class UpdateTest {
 		myBrowser.manage().window().maximize();
 
 		// khởi tạo biến lưu dữ liệu của 1 row trong excel
-		data = new UpdateData(); //Khởi tạo lại từ đầu để có dữ liệu mới, ko nhớ cái cũ
+		data = new InsertData(); //Khởi tạo lại từ đầu để có dữ liệu mới, ko nhớ cái cũ
 		
 	}
 	
@@ -79,7 +79,7 @@ public class UpdateTest {
 //		
 //	}
 	
-	private void processUpdate(String id, String password, String fullname, String email) throws InterruptedException { // Phương thức tiện ích thực hiện thao tác đăng nhập
+	private void processInsert(String id, String password, String fullname, String email) throws InterruptedException { // Phương thức tiện ích thực hiện thao tác đăng nhập
 		WebElement idTag = myBrowser.findElement(By.xpath("//input[@placeholder='Username']"));
 		idTag.sendKeys(id);
 		Thread.sleep(2000);
@@ -96,19 +96,19 @@ public class UpdateTest {
 		emailTag.sendKeys(email);
 		Thread.sleep(2000);
 		
-		WebElement updateTag = myBrowser.findElement(By.xpath("//button[normalize-space()='Update']"));
+		WebElement updateTag = myBrowser.findElement(By.xpath("//button[normalize-space()='Create']"));
 		updateTag.click();
 		Thread.sleep(2000);
 		
 		
 	}
 	
-	@Test(dataProvider = "UpdateData") //Nhờ vào dataProvider nên Test này sẽ chạy hết những dữ liệu có trong file Excel
-	public void multipleUpdate(String id, String password, String fullname, String email, String expected) throws InterruptedException {
+	@Test(dataProvider = "InsertData") //Nhờ vào dataProvider nên Test này sẽ chạy hết những dữ liệu có trong file Excel
+	public void multipleInsert(String id, String password, String fullname, String email, String expected) throws InterruptedException {
 		// ở trong sheet dữ liệu có bao nhiêu cột thì mấy ông truyền vào đúng bấy nhiêu tham số là được
 		
 //		processLogin(id, password); // thực hiện đăng nhập
-		processUpdate(id, password, fullname, email);
+		processInsert(id, password, fullname, email);
 		/*
 		 *	trả về kết quả actual là url của trang web
 		 *	trong trường hợp test thêm sửa xoá actual phải là một thứ gì khác
@@ -122,7 +122,7 @@ public class UpdateTest {
 		data.setPassword(password);
 		data.setFullname(fullname);
 		data.setEmail(email);
-		data.setAction("Test update (authenticate) function"); // thay đổi mô tả cho phù hợp với trường hợp test
+		data.setAction("Test insert (authenticate) function"); // thay đổi mô tả cho phù hợp với trường hợp test
 		data.setTestTime(new Date()); 
 		data.setExpected(expected); // expected nhập vào từ file data
 		data.setActual(actualURL);
@@ -172,7 +172,7 @@ public class UpdateTest {
 		data.writeLog(fileExcel, "test_result", logs); // tham số bao gồm đường dẫn file xuất, tên sheet, bộ dữ liệu
 	}
 
-	@DataProvider(name = "UpdateData")
+	@DataProvider(name = "InsertData")
 	public Object[][] data() throws IOException { //ĐỌC
 		// mở file excel để lấy dữ liệu test
 		XSSFWorkbook workbook = ExcelUtils.getWorkbook(fileExcel);
