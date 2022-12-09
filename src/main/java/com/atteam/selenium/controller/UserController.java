@@ -32,16 +32,36 @@ public class UserController extends HttpServlet {
 		}else if(uri.contains("/create")) {
 			try {
 				BeanUtils.populate(user, request.getParameterMap());
-				dao.create(user);
-				request.setAttribute("message", "A new user profile is added successfully!");
+				if (user.getFullname().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else if (user.getEmail().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else if (user.getId().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else if (user.getPassword().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else {
+					dao.create(user);
+					request.setAttribute("message", "A new user profile is added successfully!");
+				}					
 			} catch (Exception e) {
 				request.setAttribute("message", "A new user profile is added failed!");
 			}
 		}else if(uri.contains("/update")) {
 			try {
 				BeanUtils.populate(user, request.getParameterMap());
-				dao.update(user);
-				request.setAttribute("message", "Update successfully!");
+				if (user.getFullname().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else if (user.getEmail().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else if (user.getId().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else if (user.getPassword().isEmpty()) {
+					request.setAttribute("message", "A new user profile is added failed!");
+				} else {
+					dao.update(user);
+					request.setAttribute("message", "Update successfully!");
+				}
 			} catch (Exception e) {
 				request.setAttribute("message", "Update failed!");
 			}
